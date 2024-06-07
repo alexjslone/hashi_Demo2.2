@@ -14,7 +14,7 @@ terraform {
 
 #creating a bucket on the new branch
 resource "aws_s3_bucket" "example2" {
-  bucket = "my-tf-test-bucket2"
+  bucket = "my-terra-testbucket2-27123"
 
   tags = {
     Name        = "My bucket2"
@@ -23,7 +23,7 @@ resource "aws_s3_bucket" "example2" {
 }
 
 resource "aws_s3_bucket" "example3" {
-  bucket = "my-tf-test-bucket3"
+  bucket = "my-tf-test-bucket3-27124"
 
   tags = {
     Name        = "My bucket3"
