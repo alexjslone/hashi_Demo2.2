@@ -1,10 +1,8 @@
 terraform {
-
-  #define backend as cloud? 
- {
+  backend "remote" {
     organization = "alex27_Org"
     workspaces {
-      name = "hashi_Demo2.2"
+      name = "hashi_Demo22"
     }
   }
 }
