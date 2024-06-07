@@ -13,15 +13,23 @@ terraform {
 #These will be private but that is okay as you still can access it publicly from internet
 
 #creating a bucket on the new branch
-resource "aws_s3_bucket" "example1" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "example2" {
+  bucket = "my-tf-test-bucket2"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My bucket2"
     Environment = "Dev"
   }
 }
 
+resource "aws_s3_bucket" "example3" {
+  bucket = "my-tf-test-bucket3"
+
+  tags = {
+    Name        = "My bucket3"
+    Environment = "Dev"
+  }
+}
 
 
 
