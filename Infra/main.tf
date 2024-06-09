@@ -2,17 +2,13 @@ terraform {
   backend "remote" {
     organization = "alex27_Org"
     workspaces {
-      name = "hashi_Demo22"
+      name = "hashi_Demo2-2"
     }
   }
 }
 
-# Create a vpc or virtual private cloud. This provides extra security as it 
-# separates the application from other AWS customer applications
-#the cidr_block describes the range of IP addresses that can be used in the VPC 
-#These will be private but that is okay as you still can access it publicly from internet
 
-#creating a bucket on the new branch
+/*
 resource "aws_s3_bucket" "example2" {
   bucket = "my-terra-testbucket2-27123"
 
@@ -30,7 +26,7 @@ resource "aws_s3_bucket" "example3" {
     Environment = "Dev"
   }
 }
-
+*/
 
 
 resource "aws_vpc" "hashi_vpc" {
