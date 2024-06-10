@@ -8,7 +8,7 @@ terraform {
 }
 
 
-/*
+
 resource "aws_s3_bucket" "example2" {
   bucket = "my-terra-testbucket2-27123"
 
@@ -27,7 +27,6 @@ resource "aws_s3_bucket" "example3" {
   }
 }
 
-*/
 
 resource "aws_vpc" "hashi_vpc" {
   cidr_block = "10.0.0.0/16"
