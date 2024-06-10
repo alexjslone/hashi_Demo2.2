@@ -8,8 +8,6 @@ variable "availability_zone" {
   description = "The availability zone where the resources will reside."
   type        = string
   default     = "us-west-1a"
-#should I put in something like data.aws_availability_zones.available.names[0] # First available AZ
-#which would give me the first available zone? 
 
 }
 variable "ami" {
