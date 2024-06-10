@@ -8,7 +8,7 @@ terraform {
 }
 
 
-/*
+
 resource "aws_s3_bucket" "example2" {
   bucket = "my-terra-testbucket2-27123"
 
@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "example2" {
     Environment = "Dev"
   }
 }
-*/
+
 
 resource "aws_s3_bucket" "example3" {
   bucket = "my-tf-test-bucket3-27124"
